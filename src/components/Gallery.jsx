@@ -2,6 +2,10 @@ import GalleryCard from "../components/GalleryCard";
 import { motion } from "motion/react";
 import portfolio from "../assets/projects/portfoliov1.png";
 import portfolio2 from "../assets/projects/portfoliov2.png";
+import musicplayer from "../assets/projects/MusicPlayer.png"
+import ecommerce from "../assets/projects/e-commerce.jpg"
+import laravelcrud from "../assets/projects/Laravel-CRUD.jpg"
+import construct from "../assets/projects/Construct3.jpg"
 
 export default function Gallery() {
   const projects = [
@@ -16,42 +20,42 @@ export default function Gallery() {
     {
       title: "Portfolio Website V2",
       description:
-        "Saya meng Upgrade Portfolio saya jadi memakai Reactjs dan Tailwindcss. Saya terinspirasi dari design UI game Persona 5, dan saya menggunakannya untuk design UI Web saya",
+        "Saya meng-Upgrade Portfolio saya jadi memakai Reactjs dan Tailwindcss. Saya terinspirasi dari design UI game Persona 5, dan saya mengimplementasikannya untuk design UI Web saya",
       imageUrl: portfolio2,
       projectUrl: "",
-      repoUrl: "#",
+      repoUrl: "https://github.com/Shikein-Lorelei/Portfoliov2",
     },
     {
-      title: "Shadow Network",
+      title: "Laravel CRUD",
       description:
-        "A cutting-edge mobile application with real-time features and sleek animations that captivate users.",
-      imageUrl: "/placeholder.svg?height=300&width=400",
-      projectUrl: "#",
-      repoUrl: "#",
+        "Saya membuat CRUD (Create, Read, Update, and Delete) dari Web Portfolio pertama saya. Saya menggunakan Filamentphp sebagai Tools untuk membuat CRUD simple",
+      imageUrl: laravelcrud,
+      projectUrl: "",
+      repoUrl: "https://github.com/Shikein-Lorelei/Portfolio-Laravel",
     },
     {
-      title: "Cognitive Psience",
+      title: "Game Berbasis Web Construct3",
       description:
-        "Advanced data visualization platform that transforms complex datasets into intuitive, interactive experiences.",
-      imageUrl: "/placeholder.svg?height=300&width=400",
-      projectUrl: "#",
-      repoUrl: "#",
+        "Saya membuat beberapa game sederhana dengan menggunakan Construct 3.",
+      imageUrl: construct,
+      projectUrl: "",
+      repoUrl: "https://github.com/Shikein-Lorelei/Construct-Game",
     },
     {
-      title: "Cognitive Psience",
+      title: "E-Commerce",
       description:
-        "Advanced data visualization platform that transforms complex datasets into intuitive, interactive experiences.",
-      imageUrl: "/placeholder.svg?height=300&width=400",
-      projectUrl: "#",
-      repoUrl: "#",
+        "Saya Membuat Website E-Commerce Menggunakan PHP dan SQL.",
+      imageUrl: ecommerce,
+      projectUrl: "",
+      repoUrl: "https://github.com/Shikein-Lorelei/Immersive.",
     },
     {
-      title: "Cognitive Psience",
+      title: "Music Player",
       description:
-        "Advanced data visualization platform that transforms complex datasets into intuitive, interactive experiences.",
-      imageUrl: "/placeholder.svg?height=300&width=400",
-      projectUrl: "#",
-      repoUrl: "#",
+        "Saya membuat Music Player sederhana menggunakan React sebagai Front-end dan MongoDB, Express sebagai Back-end. Music Player ini juga ada Fitur CRUD untuk upload lagu.",
+      imageUrl: musicplayer,
+      projectUrl: "",
+      repoUrl: "https://github.com/Shikein-Lorelei/LoreleiMusic",
     },
   ];
 
