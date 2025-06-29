@@ -92,75 +92,78 @@ export default function Contact() {
             {activeInput && (
               <div
                 className={`absolute w-4 h-4 bg-[red] transform rotate-45 transition-all duration-300 
-                    ${
-                      activeInput === "name"
-                        ? "xl:top-[20%] xl:left-[5%] lg:top-[20%] lg:left-[5%] md:top-[21%] md:left-[5%] sm:top-[17%] sm:left-[3%] xs:top-[17%] xs:left-[3%]"
-                        : ""
-                    } ${
+      ${
+        activeInput === "name"
+          ? "xl:top-[20%] xl:left-[5%] lg:top-[20%] lg:left-[5%] md:top-[21%] md:left-[5%] sm:top-[17%] sm:left-[3%] xs:top-[17%] xs:left-[3%] max-[480px]:hidden"
+          : ""
+      } ${
                   activeInput === "email"
-                    ? "xl:top-[39%] xl:left-[5%] lg:top-[39%] lg:left-[5%] md:top-[40%] md:left-[5%] sm:top-[36%] sm:left-[3%] xs:top-[36%] xs:left-[3%]"
+                    ? "xl:top-[39%] xl:left-[5%] lg:top-[39%] lg:left-[5%] md:top-[40%] md:left-[5%] sm:top-[36%] sm:left-[3%] xs:top-[36%] xs:left-[3%] max-[480px]:hidden"
                     : ""
                 } ${
                   activeInput === "message"
-                    ? "xl:top-[69%] xl:left-[5%] lg:top-[69%] lg:left-[5%] md:top-[69%] md:left-[5%] sm:top-[69%] sm:left-[3%] xs:top-[69%] xs:left-[3%]"
+                    ? "xl:top-[69%] xl:left-[5%] lg:top-[69%] lg:left-[5%] md:top-[69%] md:left-[5%] sm:top-[69%] sm:left-[3%] xs:top-[69%] xs:left-[3%] max-[480px]:hidden"
                     : ""
                 }`}
               ></div>
             )}
+
             {activeInput && (
               <div
                 className={`absolute w-4 h-4 bg-[red] transform rotate-45 transition-all duration-300 
-                    ${
-                      activeInput === "name"
-                        ? "xl:top-[9%] xl:right-[5%] lg:top-[9%] lg:right-[5%] md:top-[10%] md:right-[5%] sm:top-[6%] sm:right-[3%] xs:top-[6%] xs:right-[3%]"
-                        : ""
-                    } ${
+      ${
+        activeInput === "name"
+          ? "xl:top-[9%] xl:right-[5%] lg:top-[9%] lg:right-[5%] md:top-[10%] md:right-[5%] sm:top-[6%] sm:right-[3%] xs:top-[6%] xs:right-[3%] max-[480px]:hidden"
+          : ""
+      } ${
                   activeInput === "email"
-                    ? "xl:top-[28%] xl:right-[5%] lg:top-[28%] lg:right-[5%] md:top-[29%] md:right-[5%] sm:top-[25%] sm:right-[3%] xs:top-[25%] xs:right-[3%]"
+                    ? "xl:top-[28%] xl:right-[5%] lg:top-[28%] lg:right-[5%] md:top-[29%] md:right-[5%] sm:top-[25%] sm:right-[3%] xs:top-[25%] xs:right-[3%] max-[480px]:hidden"
                     : ""
                 } ${
                   activeInput === "message"
-                    ? "xl:top-[46%] xl:right-[5%] lg:top-[46%] lg:right-[5%] md:top-[47%] md:right-[5%] sm:top-[43%] sm:right-[3%] xs:top-[43%] xs:right-[3%]"
+                    ? "xl:top-[46%] xl:right-[5%] lg:top-[46%] lg:right-[5%] md:top-[47%] md:right-[5%] sm:top-[43%] sm:right-[3%] xs:top-[43%] xs:right-[3%] max-[480px]:hidden"
                     : ""
                 }`}
               ></div>
             )}
+
             {activeInput && (
               <img
                 src={knife}
                 alt="knife"
                 className={`absolute z-30 w-24 h-24 transform transition-all duration-300 pointer-events-none select-none 
-                    ${
-                      activeInput === "name"
-                        ? "xl:top-[1%] xl:right-[1%] lg:top-[1%] lg:right-[1%] md:top-[2%] md:right-[1%] sm:-top-[4%] sm:right-[1%] sm:rotate-12 xs:-top-[4%] xs:right-[1%] xs:rotate-12"
-                        : ""
-                    } ${
+      ${
+        activeInput === "name"
+          ? "xl:top-[1%] xl:right-[1%] lg:top-[1%] lg:right-[1%] md:top-[2%] md:right-[1%] sm:-top-[4%] sm:right-[1%] sm:rotate-12 xs:-top-[4%] xs:right-[1%] xs:rotate-12 max-[480px]:hidden"
+          : ""
+      } ${
                   activeInput === "email"
-                    ? "xl:top-[17%] xl:right-[1%] lg:top-[17%] lg:right-[1%] md:top-[18%] md:right-[1%] sm:top-[11%] sm:right-[1%] xs:top-[11%] xs:right-[1%]"
+                    ? "xl:top-[17%] xl:right-[1%] lg:top-[17%] lg:right-[1%] md:top-[18%] md:right-[1%] sm:top-[11%] sm:right-[1%] xs:top-[11%] xs:right-[1%] max-[480px]:hidden"
                     : ""
                 } ${
                   activeInput === "message"
-                    ? "xl:top-[40%] xl:right-[1%] lg:top-[40%] lg:right-[1%] md:top-[41%] md:right-[1%] sm:top-[41%] sm:right-[1%] xs:top-[41%] xs:right-[1%]"
+                    ? "xl:top-[40%] xl:right-[1%] lg:top-[40%] lg:right-[1%] md:top-[41%] md:right-[1%] sm:top-[41%] sm:right-[1%] xs:top-[41%] xs:right-[1%] max-[480px]:hidden"
                     : ""
                 }`}
               ></img>
             )}
+
             {activeInput && (
               <img
                 src={arcana}
                 alt="arcana"
                 className={`absolute z-20 w-14 h-24 transform transition-all -rotate-12 duration-300 pointer-events-none select-none 
-                    ${
-                      activeInput === "name"
-                        ? "xl:top-[10%] xl:right-[10%] lg:top-[10%] lg:right-[10%] md:top-[11%] md:right-[10%] sm:top-[10%] sm:right-[15%] xs:top-[10%] xs:right-[15%]"
-                        : ""
-                    } ${
+      ${
+        activeInput === "name"
+          ? "xl:top-[10%] xl:right-[10%] lg:top-[10%] lg:right-[10%] md:top-[11%] md:right-[10%] sm:top-[10%] sm:right-[15%] xs:top-[10%] xs:right-[15%] max-[480px]:hidden"
+          : ""
+      } ${
                   activeInput === "email"
-                    ? "xl:top-[27%] xl:right-[10%] lg:top-[27%] lg:right-[10%] md:top-[28%] md:right-[10%] sm:top-[27%] sm:right-[14%] xs:top-[27%] xs:right-[14%]"
+                    ? "xl:top-[27%] xl:right-[10%] lg:top-[27%] lg:right-[10%] md:top-[28%] md:right-[10%] sm:top-[27%] sm:right-[14%] xs:top-[27%] xs:right-[14%] max-[480px]:hidden"
                     : ""
                 } ${
                   activeInput === "message"
-                    ? "xl:top-[50%] xl:right-[10%] lg:top-[50%] lg:right-[10%] md:top-[50%] md:right-[10%] sm:top-[55%] sm:right-[14%] xs:top-[55%] xs:right-[14%]"
+                    ? "xl:top-[50%] xl:right-[10%] lg:top-[50%] lg:right-[10%] md:top-[50%] md:right-[10%] sm:top-[55%] sm:right-[14%] xs:top-[55%] xs:right-[14%] max-[480px]:hidden"
                     : ""
                 }`}
               ></img>

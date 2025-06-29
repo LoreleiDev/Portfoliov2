@@ -2,62 +2,72 @@ import GalleryCard from "../components/GalleryCard";
 import { motion } from "motion/react";
 import portfolio from "../assets/projects/portfoliov1.png";
 import portfolio2 from "../assets/projects/portfoliov2.png";
-import musicplayer from "../assets/projects/MusicPlayer.png"
-import ecommerce from "../assets/projects/e-commerce.jpg"
-import laravelcrud from "../assets/projects/Laravel-CRUD.jpg"
-import construct from "../assets/projects/Construct3.jpg"
+import musicplayer from "../assets/projects/MusicPlayer.png";
+import ecommerce from "../assets/projects/e-commerce.jpg";
+import laravelcrud from "../assets/projects/Laravel-CRUD.jpg";
+import construct from "../assets/projects/Construct3.jpg";
+import { useState } from "react";
 
 export default function Gallery() {
+  const [modalMessage, setModalMessage] = useState(null);
+
   const projects = [
     {
       title: "Portfolio Website V1",
-      description:
-        "Saya membuat Portfolio Website pertama saya menggunakan Bootstrap5.",
+      description: "Saya membuat Portfolio Website pertama saya menggunakan Bootstrap5.",
       imageUrl: portfolio,
       projectUrl: "https://shikein-lorelei.github.io/Portfolio/",
       repoUrl: "https://github.com/Shikein-Lorelei/Portfolio",
     },
     {
       title: "Portfolio Website V2",
-      description:
-        "Saya meng-Upgrade Portfolio saya jadi memakai Reactjs dan Tailwindcss. Saya terinspirasi dari design UI game Persona 5, dan saya mengimplementasikannya untuk design UI Web saya",
+      description: "Saya meng-Upgrade Portfolio saya jadi memakai Reactjs dan Tailwindcss. Saya terinspirasi dari design UI Game Persona 5, dan saya mengimplementasikannya untuk tampilan UI web Portfolio saya yang kedua ini",
       imageUrl: portfolio2,
-      projectUrl: "",
+      projectUrl: "#modal",
       repoUrl: "https://github.com/Shikein-Lorelei/Portfoliov2",
     },
     {
       title: "Laravel CRUD",
-      description:
-        "Saya membuat CRUD (Create, Read, Update, and Delete) dari Web Portfolio pertama saya. Saya menggunakan Filamentphp sebagai Tools untuk membuat CRUD simple",
+      description: "Saya membuat CRUD dari Web Portfolio pertama saya. Saya membuatnya menggunakan Laravel 11 dan Filament.",
       imageUrl: laravelcrud,
-      projectUrl: "",
+      projectUrl: "#modal",
       repoUrl: "https://github.com/Shikein-Lorelei/Portfolio-Laravel",
     },
     {
       title: "Game Berbasis Web Construct3",
-      description:
-        "Saya membuat beberapa game sederhana dengan menggunakan Construct 3.",
+      description: "Saya membuat beberapa game sederhana dengan menggunakan Construct3.",
       imageUrl: construct,
-      projectUrl: "",
+      projectUrl: "#modal",
       repoUrl: "https://github.com/Shikein-Lorelei/Construct-Game",
     },
     {
       title: "E-Commerce",
-      description:
-        "Saya Membuat Website E-Commerce Menggunakan PHP dan SQL.",
+      description: "Saya Membuat Website E-Commerce Menggunakan PHP dan SQL. Sebenarnya ini adalah tugas akhir saya di pertengahan kelas 11. Dan saya ikut andil sebagai Front-end",
       imageUrl: ecommerce,
-      projectUrl: "",
+      projectUrl: "#modal",
       repoUrl: "https://github.com/Shikein-Lorelei/Immersive.",
     },
     {
       title: "Music Player",
       description:
-        "Saya membuat Music Player sederhana menggunakan React sebagai Front-end dan MongoDB, Express sebagai Back-end. Music Player ini juga ada Fitur CRUD untuk upload lagu.",
+        "Saya membuat Music Player sederhana menggunakan React sebagai Front-end dan MongoDB, Express sebagai Back-end. Web saya yang satu ini juga memiliki fitur CRUD untuk mengupload lagu yang ada di memori.",
       imageUrl: musicplayer,
-      projectUrl: "",
+      projectUrl: "#modal",
       repoUrl: "https://github.com/Shikein-Lorelei/LoreleiMusic",
     },
   ];
+
+  const handleProjectClick = (project) => {
+    if (project.projectUrl === "#modal") {
+      setModalMessage(`"${project.title}" tidak memiliki tautan proyek.`);
+    } else {
+      window.open(project.projectUrl, "_blank");
+    }
+  };
+
+  const closeModal = () => {
+    setModalMessage(null);
+  };
 
   return (
     <section
@@ -152,7 +162,7 @@ export default function Gallery() {
             <div className="bg-black p-6 transform skew-x-6 items-center">
               <p className="text-xl md:text-2xl font-bold font-Persona5hatty tracking-wider text-red-600 transform -skew-x-6 break-words min-w-[200px]">
                 "Each line of code tells a story of creativity and problem-solving. Discover the artistry behind the algorithms."
-              </p> 
+              </p>
             </div>
             <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2">
               <div className="w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-red-600"></div>
@@ -172,11 +182,28 @@ export default function Gallery() {
                 imageUrl={project.imageUrl}
                 projectUrl={project.projectUrl}
                 repoUrl={project.repoUrl}
+                onProjectClick={() => handleProjectClick(project)}
               />
             ))}
           </div>
         </div>
       </div>
+
+      {/* Modal Popup */}
+      {modalMessage && (
+        <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-75 flex items-center justify-center z-50">
+          <div className="bg-black shadow-[6px_6px_0px_red] border-2 border-white p-8 text-center transform -skew-y-1 hover:border-red-600 transition-all duration-300 relative overflow-hidden max-w-xs">
+            <h3 className="text-3xl font-persona5 text-red-600 mb-4">Notification</h3>
+            <p className="text-white font-Persona5hatty tracking-wider text-xl mb-4">{modalMessage}</p>
+            <button
+              onClick={closeModal}
+              className="bg-gradient-to-r from-red-600 to-red-700 text-white transform -skew-x-12 px-6 py-2 font-bold font-persona5 text-2xl tracking-wider hover:scale-105 transition-all"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     </section>
   );
 }

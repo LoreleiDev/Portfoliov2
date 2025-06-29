@@ -9,6 +9,7 @@ export default function GalleryCard({
   imageUrl,
   projectUrl,
   repoUrl,
+  onProjectClick,
 }) {
   const [isModalOpen, setModalOpen] = useState(false);
 
@@ -67,7 +68,7 @@ export default function GalleryCard({
                   className="text-white bg-transparent hover:text-red-600 hover:bg-transparent "
                   onClick={toggleModal}
                 >
-                  <Cross2Icon style={{width: "30px", height: "30px" }}/>
+                  <Cross2Icon style={{ width: "30px", height: "30px" }} />
                 </Button>
               </div>
               {/* Gambar modal */}
@@ -98,8 +99,14 @@ export default function GalleryCard({
                 <Button
                   className="bg-black text-white p-3 border-2 border-white hover:bg-white hover:text-black transition-colors duration-200 transform hover:scale-110"
                   onClick={(e) => {
-                    e.stopPropagation(); // Cegah modal tertutup
-                    window.open(projectUrl, "_blank");
+                    e.stopPropagation(); // Cegah efek event lain di luar tombol
+                    if (projectUrl === "#modal") {
+                      onProjectClick(
+                        `"${title}" tidak memiliki tautan proyek.`
+                      );
+                    } else {
+                      window.open(projectUrl, "_blank");
+                    }
                   }}
                 >
                   <ExternalLink className="w-5 h-5" />
