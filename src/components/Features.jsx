@@ -85,7 +85,7 @@ export default function Features() {
       <div className="fixed top-56 right-4 z-50" ref={dropdownRef}>
         <button
           onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-          className="bg-transparent text-white font-bold text-lg transform px-3 py-3 -skew-x-12 transition-all duration-200 border-2 border-red-600 shadow-lg hover:bg-red-600 hover:shadow-2xl hover:shadow-red-600/50 hover:scale-105 active:scale-95 relative overflow-hidden"
+          className="bg-transparent text-white font-bold text-lg transform px-3 py-3 -skew-x-12 transition-all duration-200 border-2 border-red-600 shadow-lg hover:bg-red-600  hover:scale-105 active:scale-95 relative overflow-hidden"
         >
           <span className="transform skew-x-12 block">
             <LayersIcon className="w-6 h-6" />
