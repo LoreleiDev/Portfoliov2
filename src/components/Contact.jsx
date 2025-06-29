@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import knife from "../assets/p5knife.png";
-import arcana from "../assets/p5arcana.png";
+import arcana from "../assets/P5arcana.png";
 import sw from "../assets/sw.png";
 
 export default function Contact() {
