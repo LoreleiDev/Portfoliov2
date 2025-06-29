@@ -74,7 +74,7 @@ export default function Contact() {
       {/* Contact Form */}
       <div className="relative text-center w-full max-w-md md:max-w-2xl">
         {/* Title */}
-        <h2 className="text-4xl font-persona5 text-white mb-6 relative z-10 py-5">
+        <h2 className="text-4xl font-persona5 text-white mb-6 relative -z-0 py-5">
           <span className="bg-gradient-to-r from-red-600 to-red-700 text-white transform -skew-x-12 px-4 py-2 inline-block">
             CONTACT ME
           </span>
@@ -82,7 +82,7 @@ export default function Contact() {
         <img
           src={sw}
           alt="sw"
-          className="absolute mx-auto top-24 rounded-lg z-[10] pointer-events-none select-none"
+          className="absolute mx-auto top-24 rounded-lg z-[1] pointer-events-none select-none"
         />
         <div className="relative transition-all duration-500 hover:scale-102 py-16">
           <div className="bg-black shadow-[6px_6px_0px_red] border-2 border-white p-5 md:p-10 transform -skew-y-1 hover:border-red-600 transition-all duration-300 relative overflow-hidden">
