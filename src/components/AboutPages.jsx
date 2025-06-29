@@ -527,7 +527,7 @@ export default function About() {
           >
             <div className="absolute inset-0 bg-gradient-to-r from-red-600 to-red-700 transform -skew-x-12 group-hover:from-red-500 group-hover:to-red-600 transition-all duration-300"></div>
             <div className="relative bg-[black] m-1 p-6 transform skew-x-12 group-hover:bg-gray-900 transition-all duration-300">
-              <span className="text-2xl font-black uppercase tracking-wider text-white transform -skew-x-12 inline-block font-persona5">
+              <span className="text-2xl max-[480px]:text-lg font-black uppercase tracking-wider text-white transform -skew-x-12 inline-block font-persona5">
                 → Contact Me ←
               </span>
             </div>
