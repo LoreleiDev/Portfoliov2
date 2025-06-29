@@ -1,5 +1,5 @@
 import { ExternalLink } from "lucide-react";
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/ui/button";
 import { Cross1Icon, GitHubLogoIcon, Cross2Icon } from "@radix-ui/react-icons";
 import { useState } from "react";
 
