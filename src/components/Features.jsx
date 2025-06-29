@@ -82,7 +82,7 @@ export default function Features() {
         <source src={musicSrc} type="audio/mpeg" />
       </audio>
 
-      <div className="fixed top-56 right-4 z-50" ref={dropdownRef}>
+      <div className="fixed top-56 xs:top-72 max-[480px]:top-[20rem] right-4 z-50" ref={dropdownRef}>
         <button
           onClick={() => setIsDropdownOpen(!isDropdownOpen)}
           className="bg-red-700 text-white font-bold text-lg transform px-3 py-3 -skew-x-12 transition-all duration-200 border-2 border-red-600 shadow-lg hover:bg-red-600  hover:scale-105 active:scale-95 relative overflow-hidden"
@@ -169,7 +169,7 @@ export default function Features() {
       </div>
 
       {isCalendarVisible && (
-        <div className="fixed top-72 right-4 z-40">
+        <div className="fixed top-72 xs:top-[22rem] max-[480px]:top-[25rem] right-4 z-40">
           <div className="bg-black border-2 border-red-600 shadow-xl w-48 font-mono relative">
             <div className="bg-red-600 text-black px-3 py-1 text-xs font-bold flex justify-between items-center">
               <span>TIME & DATE</span>

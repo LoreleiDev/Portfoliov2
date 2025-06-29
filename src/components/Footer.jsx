@@ -13,7 +13,7 @@ export default function Footer() {
             <div className="absolute inset-0 bg-gradient-to-br from-red-600 via-black to-white opacity-20 z-0" />
 
             {/* Social Buttons */}
-            <div className="flex flex-wrap justify-center gap-6 relative z-10 mt-5">
+            <div className="flex flex-wrap justify-center gap-6 relative z-10 mt-5 max-[480px]:gap-10">
               {/* GitHub */}
               <a
                 href="https://github.com/Shikein-Lorelei"
@@ -22,7 +22,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
               >
                 <Button
-                  className="bg-transparent w-[4rem] h-16 text-white hover:text-[red] hover:bg-transparent hover:rotate-6 font-Persona5hatty tracking-wider transition-all duration-300 px-4 py-2 flex flex-col items-center"
+                  className="bg-transparent w-[4rem] h-16 max-[480px]:w-[2rem] max-[480px]:h-[2rem] text-white hover:text-[red] hover:bg-transparent hover:rotate-6 font-Persona5hatty tracking-wider transition-all duration-300 px-4 py-2 flex flex-col items-center"
                 >
                   <GitHubLogoIcon className=" mb-2 " style={{ height: "20px", width: "20px" }} />
                   <span className="tracking-wider -skew-y-6">GITHUB</span>
@@ -37,7 +37,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
               >
                 <Button
-                  className="bg-transparent w-[4rem] h-16 text-white hover:text-[red] hover:bg-transparent hover:rotate-6 font-Persona5hatty tracking-wider transition-all duration-300 px-4 py-2 flex flex-col items-center"
+                  className="bg-transparent w-[4rem] h-16  max-[480px]:w-[2rem] max-[480px]:h-[2rem] text-white hover:text-[red] hover:bg-transparent hover:rotate-6 font-Persona5hatty tracking-wider transition-all duration-300 px-4 py-2 flex flex-col items-center"
                 >
                   <FontAwesomeIcon icon={faWhatsapp} className=" mb-2 " style={{ height: "20px", width: "20px" }} />
                   <span className="tracking-wider -skew-y-6">WHATSAPP</span>
@@ -52,7 +52,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
               >
                 <Button
-                  className="bg-transparent w-[4rem] h-16 text-white hover:text-[red] hover:bg-transparent hover:rotate-6 font-Persona5hatty tracking-wider transition-all duration-300 px-4 py-2 flex flex-col items-center"
+                  className="bg-transparent w-[4rem] h-16  max-[480px]:w-[2rem] max-[480px]:h-[2rem] text-white hover:text-[red] hover:bg-transparent hover:rotate-6 font-Persona5hatty tracking-wider transition-all duration-300 px-4 py-2 flex flex-col items-center"
                 >
                   <InstagramLogoIcon className=" mb-2 " style={{ height: "20px", width: "20px" }} />
                   <span className="tracking-wider -skew-y-6">INSTAGRAM</span>
@@ -67,7 +67,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
               >
                 <Button
-                  className="bg-transparent w-[4rem] h-16 text-white hover:text-[red] hover:bg-transparent hover:rotate-6 font-Persona5hatty tracking-wider transition-all duration-300 px-4 py-2 flex flex-col items-center"
+                  className="bg-transparent w-[4rem] h-16 max-[480px]:w-[2rem] max-[480px]:h-[2rem] text-white hover:text-[red] hover:bg-transparent hover:rotate-6 font-Persona5hatty tracking-wider transition-all duration-300 px-4 py-2 flex flex-col items-center"
                 >
                   <FontAwesomeIcon icon={faDiscord} className=" mb-2 " style={{ height: "20px", width: "20px" }} />
                   <span className="tracking-wider -skew-y-6">DISCORD</span>
@@ -82,7 +82,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
               >
                 <Button
-                  className="bg-transparent w-[4rem] h-16 text-white hover:text-[red] hover:bg-transparent hover:rotate-6 font-Persona5hatty tracking-wider transition-all duration-300 px-4 py-2 flex flex-col items-center"
+                  className="bg-transparent w-[4rem] h-16 max-[480px]:w-[2rem] max-[480px]:h-[2rem] text-white hover:text-[red] hover:bg-transparent hover:rotate-6 font-Persona5hatty tracking-wider transition-all duration-300 px-4 py-2 flex flex-col items-center"
                 >
                   <LinkedInLogoIcon className=" mb-2 " style={{ height: "20px", width: "20px" }} />
                   <span className="tracking-wider -skew-y-6">LINKEDIN</span>

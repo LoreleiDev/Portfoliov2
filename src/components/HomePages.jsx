@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <section
       id="home"
-      className="min-h-screen bg-black relative flex items-center justify-center scroll-mt-32"
+      className="min-h-screen bg-black relative flex items-center justify-center scroll-mt-32 pt-[50px] pb-5"
     >
       {/* Background geometric elements */}
       <div className="absolute inset-0 ">
@@ -111,12 +111,12 @@ export default function Home() {
             >
               {/* Main title */}
               <div className="relative">
-                <h1 className="text-3xl sm:text-2xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-white tracking-wider relative z-10">
+                <h1 className="text-3xl max-[480px]:text-[20px] xs:text-md sm:text-md md:text-2xl lg:text-3xl xl:text-4xl font-bold text-white tracking-wider relative z-10">
                   <span className="inline-block font-Persona5hatty transform -skew-x-6 bg-red-600 px-2 py-1 sm:px-3 sm:py-2 lg:px-4 lg:py-2 shadow-[4px_4px_0px_white] sm:shadow-[6px_6px_0px_white] lg:shadow-[8px_8px_0px_white] border-2 border-white">
                     RADITYA NALA ARGYA WIJAYA
                   </span>
                   <br />
-                  <span className="inline-block font-persona5 transform skew-x-3 bg-black px-2 py-1 sm:px-3 sm:py-2 lg:px-4 lg:py-2 mt-2 sm:mt-3 lg:mt-4 shadow-[4px_4px_0px_white] sm:shadow-[6px_6px_0px_white] lg:shadow-[8px_8px_0px_white] border-2 border-white whitespace-nowrap min-w-[200px]">
+                  <span className="inline-block font-persona5 transform skew-x-3 bg-black xs:px-2 xs:py-1 sm:px-3 sm:py-2 lg:px-4 lg:py-2 mt-2 sm:mt-3 lg:mt-4 shadow-[4px_4px_0px_white] sm:shadow-[6px_6px_0px_white] lg:shadow-[8px_8px_0px_white] border-2 border-white whitespace-nowrap min-w-[200px]">
                     <TypeAnimation
                       sequence={[
                         "WEB PROGRAMMER",
@@ -150,7 +150,7 @@ export default function Home() {
                 transition={{ duration: 0.8, delay: 0.8 }}
               >
                 <div className="absolute top-0 left-0 w-2 h-2 bg-white transform rotate-45 -translate-x-1 -translate-y-1" />
-                <p className="text-lg sm:text-xl lg:text-3xl text-white leading-relaxed italic">
+                <p className="text-lg xs:text-2xl sm:text-2xl lg:text-3xl xl:text-4xl max-[480px]:text-3xl text-white leading-relaxed italic">
                   I'm a{" "}
                   <span className="text-red-500 font-bold font-Persona5hatty tracking-wider">
                     JUNIOR WEB PROGRAMMER
