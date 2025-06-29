@@ -57,7 +57,7 @@ export default function Navbar() {
 };
 
   return (
-    <nav className="z-50 bg-[#000000] text-white text-2xl font-bold font-persona5 sticky top-0">
+    <nav className="z-50 bg-[#000000] text-white text-2xl font-bold font-persona5 fixed top-0 w-full">
       {/* scroll indicator */}
       <motion.div
         id="scroll-indicator"
