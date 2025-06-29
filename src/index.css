@@ -30,14 +30,14 @@
 
 @font-face {
     font-family: 'Persona5';
-    src: url('./assets/fonts/Persona5MenuFontPrototype-Regular.ttf') format('truetype');
+    src: url('./assets/fonts/Persona5.woff2') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Persona5hatty';
-    src: url('./assets/fonts/p5hatty-1.ttf') format('truetype');
+    src: url('./assets/fonts/p5hatty.woff2') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
