@@ -9,26 +9,26 @@ import {
 } from "lucide-react";
 import { motion } from "motion/react";
 import { TypeAnimation } from "react-type-animation";
-import run from "../assets/morganarun.gif";
-import html5 from "../assets/icons/html.png";
-import css3 from "../assets/icons/css.png";
-import js from "../assets/icons/js.png";
-import react from "../assets/icons/react.png";
-import tailwind from "../assets/icons/tailwind.png";
-import bootstrap from "../assets/icons/bootstrap5.png";
-import laravel from "../assets/icons/laravel.png";
-import vite from "../assets/icons/vite.png";
-import express from "../assets/icons/express.png";
-import filament from "../assets/icons/filament.png";
-import vscode from "../assets/icons/vscode.png";
-import railway from "../assets/icons/railway.png";
-import nodejs from "../assets/icons/nodejs.png";
-import mysql from "../assets/icons/mysql.png";
-import mongodb from "../assets/icons/mongodb.png";
-import vercel from "../assets/icons/vercel.png";
-import git from "../assets/icons/git.png";
-import php from "../assets/icons/php.png";
-import github from "../assets/icons/github.png";
+import run from "../assets/morganarun.webp";
+import html5 from "../assets/icons/html.webp";
+import css3 from "../assets/icons/css.webp";
+import js from "../assets/icons/js.webp";
+import react from "../assets/icons/react.webp";
+import tailwind from "../assets/icons/tailwind.webp";
+import bootstrap from "../assets/icons/bootstrap5.webp";
+import laravel from "../assets/icons/laravel.webp";
+import vite from "../assets/icons/vite.webp";
+import express from "../assets/icons/express.webp";
+import filament from "../assets/icons/filament.webp";
+import vscode from "../assets/icons/vscode.webp";
+import railway from "../assets/icons/railway.webp";
+import nodejs from "../assets/icons/nodejs.webp";
+import mysql from "../assets/icons/mysql.webp";
+import mongodb from "../assets/icons/mongodb.webp";
+import vercel from "../assets/icons/vercel.webp";
+import git from "../assets/icons/git.webp";
+import php from "../assets/icons/php.webp";
+import github from "../assets/icons/github.webp";
 
 export default function About() {
   const techStacks = [
@@ -401,18 +401,11 @@ export default function About() {
               <div className="absolute top-0 left-0 w-8 h-8 bg-red-600 transform rotate-45 -translate-x-4 -translate-y-4"></div>
               <div className="transform skew-x-2">
                 <p className="text-xl md:text-2xl leading-relaxed text-gray-200 italic">
-                  Nama saya{" "}
+                  Nama saya adalah{" "}
                   <span className="text-red-600 font-bold font-Persona5hatty tracking-wider">
                     RADITYA NALA ARGYA WIJAYA
                   </span>{" "}
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt
-                  nemo cumque rem quos, dolores velit corporis et doloremque
-                  eius reprehenderit nulla, sequi odio dolor? Eveniet nihil
-                  cumque sint consectetur tenetur. Provident perferendis
-                  reiciendis illum corporis numquam consequuntur vel dolorum
-                  odit praesentium, unde temporibus sapiente, ad nobis
-                  distinctio assumenda, doloremque exercitationem dolore optio
-                  nam? Iste deleniti iure magnam sit quas enim.
+                  , saya adalah siswa dari SMKN 2 SURABAYA, Jurusan Rekayasa Perangkat Lunak. Saya adalah orang yang tertarik dalam bidang Web Programming. Saya sudah dapat menggunakan beberapa Bahasa Pemrograman Seperti Javascript dan PHP.
                 </p>
               </div>
               <div className="absolute bottom-0 right-0 w-6 h-6 bg-red-600 transform rotate-45 translate-x-3 translate-y-3"></div>

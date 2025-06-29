@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import gifSplash from "../assets/finishjoker.gif"; 
-import slashImage from "../assets/slash.png"; 
+import gifSplash from "../assets/finishjoker.webp"; 
+import slashImage from "../assets/slash.webp"; 
 
 export default function Load({ onFinish }) {
   const [visible, setVisible] = useState(true);

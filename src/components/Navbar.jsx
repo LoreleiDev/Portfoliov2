@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence, useScroll } from "motion/react";
-import logoImage from "../assets/LP-removebg-preview.png";
+import logoImage from "../assets/LP-removebg-preview.webp";
 
 const navLinks = [
   { name: "HOME", href: "#home" },

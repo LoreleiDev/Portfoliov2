@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 import { Button } from "@/components/ui/button";
 import { ChevronRight, Zap, ExternalLink, GithubIcon } from "lucide-react";
 import { TypeAnimation } from "react-type-animation";
-import photo from "../assets/Foto.jpg";
+import photo from "../assets/Foto.webp";
 
 export default function Home() {
   const handleClick = () => {

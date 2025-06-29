@@ -1,11 +1,11 @@
 import GalleryCard from "../components/GalleryCard";
 import { motion } from "motion/react";
-import portfolio from "../assets/projects/portfoliov1.png";
-import portfolio2 from "../assets/projects/portfoliov2.png";
-import musicplayer from "../assets/projects/MusicPlayer.png";
-import ecommerce from "../assets/projects/e-commerce.jpg";
-import laravelcrud from "../assets/projects/Laravel-CRUD.jpg";
-import construct from "../assets/projects/Construct3.jpg";
+import portfolio from "../assets/projects/portfoliov1.webp";
+import portfolio2 from "../assets/projects/portfoliov2.webp";
+import musicplayer from "../assets/projects/MusicPlayer.webp";
+import ecommerce from "../assets/projects/e-commerce.webp";
+import laravelcrud from "../assets/projects/Laravel-CRUD.webp";
+import construct from "../assets/projects/Construct3.webp";
 import { useState } from "react";
 
 export default function Gallery() {
@@ -21,7 +21,7 @@ export default function Gallery() {
     },
     {
       title: "Portfolio Website V2",
-      description: "Saya meng-Upgrade Portfolio saya jadi memakai Reactjs dan Tailwindcss. Saya terinspirasi dari design UI Game Persona 5, dan saya mengimplementasikannya untuk tampilan UI web Portfolio saya yang kedua ini",
+      description: "Saya meng-Upgrade Portfolio saya jadi memakai Reactjs dan Tailwindcss. Saya terinspirasi dari design UI Game Persona 5, dan saya mengimplementasikannya untuk tampilan UI web Portfolio saya yang kedua ini.",
       imageUrl: portfolio2,
       projectUrl: "#modal",
       repoUrl: "https://github.com/Shikein-Lorelei/Portfoliov2",
@@ -42,7 +42,7 @@ export default function Gallery() {
     },
     {
       title: "E-Commerce",
-      description: "Saya Membuat Website E-Commerce Menggunakan PHP dan SQL. Sebenarnya ini adalah tugas akhir saya di pertengahan kelas 11. Dan saya ikut andil sebagai Front-end",
+      description: "Saya Membuat Website E-Commerce Menggunakan PHP dan SQL. Sebenarnya ini adalah tugas akhir saya di pertengahan kelas 11. Dan saya ikut andil sebagai Front-end.",
       imageUrl: ecommerce,
       projectUrl: "#modal",
       repoUrl: "https://github.com/Shikein-Lorelei/Immersive.",

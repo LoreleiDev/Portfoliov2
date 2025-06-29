@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
-import knife from "../assets/p5knife.png";
-import arcana from "../assets/P5arcana.png";
-import sw from "../assets/sw.png";
+import knife from "../assets/p5knife.webp";
+import arcana from "../assets/P5arcana.webp";
+import sw from "../assets/sw.webp";
 
 export default function Contact() {
   const [formData, setFormData] = useState({

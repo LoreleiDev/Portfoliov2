@@ -1,8 +1,8 @@
 import { useState, useRef, useEffect } from "react";
 import { Play, Pause, X, CalendarIcon } from "lucide-react";
 import { LayersIcon } from "@radix-ui/react-icons";
-import musicSrc from "../assets/music/Joy.mp3";
-import thumbImage from '../assets/mask.png';
+import musicSrc from "../assets/music/Joy.ogg";
+import thumbImage from '../assets/mask.webp';
 
 export default function Features() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
