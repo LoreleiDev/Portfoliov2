@@ -7,7 +7,7 @@ import photo from "../assets/Foto.webp";
 export default function Home() {
   const handleClick = () => {
     window.open(
-      "https://github.com/Shikein-Lorelei?tab=repositories",
+      "https://github.com/loreleidev?tab=repositories",
       "_blank"
     );
   };
