@@ -16,7 +16,7 @@ export default function Footer() {
             <div className="flex flex-wrap justify-center gap-6 relative z-10 mt-5 max-[480px]:gap-10">
               {/* GitHub */}
               <a
-                href="https://github.com/Shikein-Lorelei"
+                href="https://github.com/LoreleiDev"
                 className="group"
                 target="_blank"
                 rel="noopener noreferrer"
