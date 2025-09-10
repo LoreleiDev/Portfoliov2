@@ -37,7 +37,7 @@ export default function Gallery() {
       title: "Game Berbasis Web Construct3",
       description: "Saya membuat beberapa game sederhana dengan menggunakan Construct3.",
       imageUrl: construct,
-      projectUrl: "#modal",
+      projectUrl: "https://drive.google.com/drive/folders/146QDR2bm6j0IhbA-cLSZXB-LLbJ-HTg7",
       repoUrl: "https://github.com/loreleidev/Construct-Game",
     },
     {
